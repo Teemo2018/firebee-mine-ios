@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "WXEnergyViewController.h"
+#import "WXMineViewController.h"
 
 FOUNDATION_EXPORT double WXMineBusinessVersionNumber;
 FOUNDATION_EXPORT const unsigned char WXMineBusinessVersionString[];

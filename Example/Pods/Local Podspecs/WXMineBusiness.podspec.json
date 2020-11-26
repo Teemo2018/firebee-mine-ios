@@ -3,20 +3,27 @@
   "version": "0.1.0",
   "summary": "A short description of WXMineBusiness.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Teemo2018/WXMineBusiness",
+  "homepage": "https://github.com/tw-firebee/firebee-mine-ios",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Teemo2018": "chenjianneng@bytedance.com"
+    "Teemo2018": ""
   },
   "source": {
-    "git": "https://github.com/Teemo2018/WXMineBusiness.git",
+    "git": "https://github.com/tw-firebee/firebee-mine-ios.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "WXMineBusiness/Classes/**/*"
+  "source_files": "WXMineBusiness/Classes/**/*",
+  "static_framework": true,
+  "resources": "WXMineBusiness/Assets/**/*",
+  "resource_bundles": {
+    "WXMineBusiness": [
+      "WXMineBusiness/Assets/*.storyboard"
+    ]
+  }
 }

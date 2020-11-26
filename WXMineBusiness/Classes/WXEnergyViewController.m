@@ -7,7 +7,7 @@
 //
 
 #import "WXEnergyViewController.h"
-#import "WXRocketCPURecordsViewController.h"
+//#import "WXRocketCPURecordsViewController.h"
 
 @interface WXEnergyViewController ()
 
@@ -171,8 +171,8 @@
 }
 
 - (void)toRecordsViewController {
-    WXRocketCPURecordsViewController *vc = [[WXRocketCPURecordsViewController alloc] init];
-    [self.navigationController pushViewController:vc animated:YES];
+//    WXRocketCPURecordsViewController *vc = [[WXRocketCPURecordsViewController alloc] init];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

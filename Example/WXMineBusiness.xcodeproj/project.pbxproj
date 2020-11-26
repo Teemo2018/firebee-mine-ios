@@ -129,7 +129,7 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				DD5B14629C9BABBBBF267603 /* [CP] Embed Pods Frameworks */,
+				E74FFEABB015EA8A8D1BE3FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,22 +207,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD5B14629C9BABBBBF267603 /* [CP] Embed Pods Frameworks */ = {
+		E74FFEABB015EA8A8D1BE3FE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WXMineBusiness_Tests/Pods-WXMineBusiness_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WXMineBusiness/WXMineBusiness.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-WXMineBusiness_Tests/Pods-WXMineBusiness_Tests-resources.sh",
+				"${PODS_ROOT}/../../WXMineBusiness/Assets/WXEnergy.storyboard",
+				"${PODS_ROOT}/../../WXMineBusiness/Assets/WXMineViewController.xib",
+				"${PODS_CONFIGURATION_BUILD_DIR}/WXMineBusiness/WXMineBusiness.bundle",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WXMineBusiness.framework",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WXEnergy.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WXMineViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WXMineBusiness.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WXMineBusiness_Tests/Pods-WXMineBusiness_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WXMineBusiness_Tests/Pods-WXMineBusiness_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
